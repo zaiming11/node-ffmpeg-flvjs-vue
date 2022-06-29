@@ -137,3 +137,22 @@ export default {
 var ffmpeg = require("fluent-ffmpeg");
 ffmpeg.setFfmpegPath("D:/ffmpeg-20191031-7c872df-win64-static/ffmpeg-20191031-7c872df-win64-static/bin/ffmpeg");
 ```
+# 5.nodejs后端服务打包成exe
+下载PKG
+咱们可以选择全局安装，在任意目录执行：
+
+$ npm install -g pkg
+
+进入nodejs项目根目录，执行如下命令
+
+$ pkg index.js
+
+前环境只支持编译为windows系统的可执行文件，也就是win
+
+调整指令为:
+
+$ pkg -t win index.js
+
+报错看
+
+https://www.cnblogs.com/laolieren/p/build_nodejs_app_with_pkg.html
