@@ -20,7 +20,7 @@ export default {
         this.player = flvjs.createPlayer({
           type: "flv",
           isLive: true,
-          url: `ws://localhost:8888/rtsp/${this.id}/?url=${this.rtsp}`,
+          url: `ws://localhost:8001/rtsp/${this.id}/?url=${this.rtsp}`,
         });
         this.player.attachMediaElement(video);
         try {
